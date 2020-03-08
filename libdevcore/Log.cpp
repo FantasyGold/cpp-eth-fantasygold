@@ -25,7 +25,7 @@
 #include <pthread.h>
 #endif
 
-#ifndef FANTASYGOLD_BUILD
+#ifndef FGC_BUILD
 
 #include <boost/core/null_deleter.hpp>
 #include <boost/log/attributes/clock.hpp>

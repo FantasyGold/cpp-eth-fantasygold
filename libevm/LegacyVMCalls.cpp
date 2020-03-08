@@ -136,7 +136,7 @@ void LegacyVM::caseCreate()
     updateMem(memNeed(initOff, initSize));
     updateIOGas();
 
-#ifdef FANTASYGOLD_BUILD
+#ifdef FGC_BUILD
     if (endowment) BOOST_THROW_EXCEPTION(CreateWithValue());
 #endif
 

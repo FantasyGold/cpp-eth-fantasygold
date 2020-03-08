@@ -26,7 +26,7 @@
 #include <libdevcrypto/Common.h>
 #include <libdevcrypto/LibSnark.h>
 #include <libethcore/Common.h>
-#ifdef FANTASYGOLD_BUILD
+#ifdef FGC_BUILD
 #include <fantasygold/fantasygoldutils.h>
 #endif
 using namespace std;
@@ -102,7 +102,7 @@ ETH_REGISTER_PRECOMPILED(btc_ecrecover)(bytesConstRef _in)
     try
     {
         bool recovered = false;
-#ifdef FANTASYGOLD_BUILD
+#ifdef FGC_BUILD
         u256 v = (u256)in.v;
         recovered = fantasygoldutils::btc_ecrecover(in.hash, v, in.r, in.s, ret);
 #endif

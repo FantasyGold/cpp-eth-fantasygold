@@ -76,7 +76,7 @@ enum class Network
     ByzantiumToConstantinopleFixAt5 = 104,
 
     Special = 0xff,         ///< Something else.
-    fantasygoldMainNetwork = 9,    ///< FANTASYGOLD Homestead + EIP150 + EIP158 Rules active from block 0 to enum class Network
+    fantasygoldMainNetwork = 9,    ///< FGC Homestead + EIP150 + EIP158 Rules active from block 0 to enum class Network
     fantasygoldTestNetwork = 10
 };
 

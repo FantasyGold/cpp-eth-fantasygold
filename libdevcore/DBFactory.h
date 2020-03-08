@@ -30,7 +30,7 @@ namespace db
 enum class DatabaseKind
 {
     LevelDB,
-#ifndef FANTASYGOLD_BUILD
+#ifndef FGC_BUILD
     RocksDB,
 #endif
     MemoryDB

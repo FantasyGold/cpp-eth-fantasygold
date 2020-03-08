@@ -28,7 +28,7 @@ enum class VMKind
 {
     Interpreter,
     Legacy,
-#ifndef FANTASYGOLD_BUILD
+#ifndef FGC_BUILD
     DLL
 #endif
 };
